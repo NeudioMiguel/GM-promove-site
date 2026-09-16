@@ -38,7 +38,7 @@
 
         .hero {
             text-align: center;
-            padding: 60px 20px;
+            padding: 55px 20px;
         }
 
         .hero h2 {
@@ -52,7 +52,7 @@
 
         .hero p {
             color: #ccc;
-            max-width: 600px;
+            max-width: 650px;
             margin: auto;
         }
 
@@ -61,7 +61,7 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
-            max-width: 400px;
+            max-width: 420px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -74,6 +74,8 @@
             font-weight: bold;
             text-align: center;
             font-size: 17px;
+            cursor: pointer;
+            border: none;
         }
 
         .pay {
@@ -81,12 +83,7 @@
             color: #000;
         }
 
-        .music {
-            background: #222;
-            color: white;
-            border: 1px solid #444;
-        }
-
+        .music,
         .proof {
             background: #222;
             color: white;
@@ -117,6 +114,89 @@
             margin-bottom: 8px;
         }
 
+        .price {
+            color: #d4af37;
+            font-size: 21px;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        .payment {
+            background: #151515;
+            padding: 25px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            border: 1px solid #252525;
+        }
+
+        .payment h3 {
+            color: #d4af37;
+            margin-bottom: 8px;
+        }
+
+        .number {
+            font-size: 19px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .notice {
+            background: #1b1b1b;
+            border-left: 4px solid #d4af37;
+            padding: 18px;
+            margin-top: 20px;
+            color: #ddd;
+        }
+
+        .order-box {
+            background: #151515;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #252525;
+            margin-top: 20px;
+        }
+
+        .order-box label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .order-box select {
+            width: 100%;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #444;
+            background: #222;
+            color: white;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .total {
+            background: #0b0b0b;
+            padding: 18px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .total p {
+            color: #aaa;
+            margin-bottom: 5px;
+        }
+
+        .total strong {
+            color: #d4af37;
+            font-size: 28px;
+        }
+
+        .confirm-btn {
+            width: 100%;
+            background: #d4af37;
+            color: #000;
+        }
+
         footer {
             text-align: center;
             padding: 30px 20px;
@@ -143,20 +223,20 @@
 
     <p>
         Ajudamos artistas independentes a distribuir,
-        promover e lançar as suas músicas nas plataformas digitais.
+        promover e preparar os seus lançamentos digitais.
     </p>
 
     <div class="buttons">
 
-        <a href="#" class="btn pay">
+        <a href="#pagamento" class="btn pay">
             💳 PAGAR SERVIÇO
         </a>
 
-        <a href="#" class="btn music">
-            🎵 ENVIAR MÚSICA
+        <a href="#servicos" class="btn music">
+            🎵 VER SERVIÇOS
         </a>
 
-        <a href="#" class="btn proof">
+        <a href="#pagamento" class="btn proof">
             🧾 ENVIAR COMPROVATIVO
         </a>
 
@@ -164,71 +244,178 @@
 
 </div>
 
-<section>
+<section id="servicos">
 
-    <h2>Como funciona?</h2>
+    <h2>Serviços e Preços</h2>
 
     <div class="card">
-        <h3>1. Escolha o serviço</h3>
-        <p>
-            Escolha o serviço ou pacote que deseja contratar.
-        </p>
+        <h3>🎵 Distribuição Musical</h3>
+        <p>Distribuição de uma música para plataformas digitais.</p>
+        <div class="price">2.000 Kz</div>
     </div>
 
     <div class="card">
-        <h3>2. Faça o pagamento</h3>
+        <h3>🎨 Distribuição + Nossa Capa</h3>
         <p>
-            Realize o pagamento através do método disponibilizado.
+            Distribuição da música com criação da capa pela GM Promov.
         </p>
+        <div class="price">2.500 Kz</div>
     </div>
 
     <div class="card">
-        <h3>3. Envie a música</h3>
+        <h3>📢 Publicidade de Shows</h3>
         <p>
-            Envie a sua música, capa e informações necessárias.
+            Divulgação e publicidade de shows e eventos.
         </p>
+        <div class="price">1.000 Kz</div>
     </div>
 
     <div class="card">
-        <h3>4. Envie o comprovativo</h3>
+        <h3>🖼️ Criação de Capa Musical</h3>
         <p>
-            Envie o comprovativo do pagamento para confirmação.
+            Criação de capa para lançamento musical.
         </p>
+        <div class="price">1.000 Kz</div>
+    </div>
+
+    <div class="card">
+        <h3>🎓 Curso Online de Distribuição Musical</h3>
+        <p>
+            Aprenda a distribuir as suas próprias músicas nas plataformas digitais.
+        </p>
+        <div class="price">2.000 Kz</div>
     </div>
 
 </section>
 
-<section>
+<section id="pagamento">
 
-    <h2>Serviços</h2>
+    <h2>Escolher Serviço</h2>
 
-    <div class="card">
-        <h3>🎵 Distribuição Musical</h3>
-        <p>
-            Distribuição de músicas para plataformas digitais.
-        </p>
+    <p style="text-align:center; color:#ccc; margin-bottom:25px;">
+        Seleccione o serviço que deseja contratar para consultar o valor a pagar.
+    </p>
+
+    <div class="order-box">
+
+        <label for="servico">Seleccione o serviço:</label>
+
+        <select id="servico" onchange="actualizarPreco()">
+
+            <option value="2000">
+                Distribuição Musical — 2.000 Kz
+            </option>
+
+            <option value="2500">
+                Distribuição + Nossa Capa — 2.500 Kz
+            </option>
+
+            <option value="1000">
+                Publicidade de Shows — 1.000 Kz
+            </option>
+
+            <option value="1000">
+                Criação de Capa Musical — 1.000 Kz
+            </option>
+
+            <option value="2000">
+                Curso Online de Distribuição Musical — 2.000 Kz
+            </option>
+
+        </select>
+
+        <div class="total">
+
+            <p>Total a pagar</p>
+
+            <strong id="preco">2.000 Kz</strong>
+
+        </div>
+
     </div>
 
-    <div class="card">
-        <h3>📢 Promoção Musical</h3>
-        <p>
-            Divulgação e promoção de lançamentos.
-        </p>
+    <h2 style="margin-top:45px;">Métodos de Pagamento</h2>
+
+    <div class="payment">
+
+        <h3>Multicaixa Express</h3>
+
+        <p>Número para pagamento:</p>
+
+        <div class="number">
+            924 930 819
+        </div>
+
     </div>
 
-    <div class="card">
-        <h3>🎨 Capas e Extras</h3>
+    <div class="payment">
+
+        <h3>Unitel Money</h3>
+
+        <p>Número para pagamento:</p>
+
+        <div class="number">
+            924 930 819
+        </div>
+
+    </div>
+
+    <div class="payment">
+
+        <h3>Transferência Bancária</h3>
+
+        <p>Número da conta:</p>
+
+        <div class="number">
+            005100008915588310159
+        </div>
+
+    </div>
+
+    <div class="notice">
+
+        <strong>Depois de efectuar o pagamento:</strong>
+
         <p>
-            Serviços adicionais para preparar o teu lançamento.
+            Guarde o comprovativo. Depois, envie o comprovativo
+            juntamente com os seus dados para a GM Promov.
         </p>
+
+    </div>
+
+    <div style="margin-top:25px;">
+
+        <a href="#pagamento" class="btn confirm-btn">
+            🧾 ENVIAR COMPROVATIVO
+        </a>
+
     </div>
 
 </section>
 
 <footer>
+
     <p>© 2026 <strong>GM Promov</strong></p>
+
     <p>Distribuição e Promoção Musical</p>
+
 </footer>
 
+<script>
+
+function actualizarPreco() {
+
+    var servico = document.getElementById("servico");
+
+    var preco = servico.value;
+
+    var precoFormatado = Number(preco).toLocaleString("pt-PT");
+
+    document.getElementById("preco").textContent =
+        precoFormatado + " Kz";
+}
+
+</script>
+
 </body>
-  </html>
+            </html>
